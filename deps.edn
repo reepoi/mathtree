@@ -1,0 +1,21 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.0"}
+        io.github.reepoi/aristotle
+        {:git/sha "d7ee879945e0060dc5fcd0b8eac2e0e476d066d7"}}
+ :aliases
+ {:run-m {:main-opts ["-m" "mathtree.mathtree"]}
+  :run-x {:ns-default mathtree.mathtree
+          :exec-fn greet
+          :exec-args {:name "Clojure"}}
+  :build {:deps {io.github.clojure/tools.build
+                 {:mvn/version "0.10.5"}}
+          :ns-default build}
+  :test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
+                      io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}}
+  :repl/conjure {:extra-deps {nrepl/nrepl {:mvn/version "1.0.0"}
+                              cider/cider-nrepl {:mvn/version "0.42.1"}}
+                 :main-opts  ["--main" "nrepl.cmdline"
+                              "--middleware" "[cider.nrepl/cider-middleware]"
+                              "--interactive"]}}}

@@ -1,12 +1,24 @@
 # mathtree
 
-FIXME: my new application.
+# Vision
 
-## Installation
+Mathtree speeds up problem-solving by revealing what mathematical tools that rely on a given set of assumptions.
+People who can describe the assumptions of their problem can quickly find existing and relevant mathematical tools to apply.
+They avoid rederiving the theory when the mathematical tool Mathtree finds is the solution.
+When it is not the complete solution, Mathtree helps people define the gap between existing mathematical tools and their problems' solutions, leading to refined research questions.
+By eliminating duplicated efforts of people in different fields, and presenting a unified perspective on gaps in existing research, people can effectively build on each others' research and get clarity about the most important questions to ask to solve the global community's problems.
 
-Download from https://github.com/mathtree/mathtree
+Mathtree works by documenting assumptions and linking them to the mathematical tools that rely on them.
+It is a tree-like network where the most fundamental assumptions will be connected to most mathematical tools, and more uncommon assumptions will be linked to a few.
+How an assumption that is described in different fields may be different, but these can be linked as equivalent assumptions.
+Each assumption is an equivalence class of assumption descriptions, which allows Mathtree to reveal mathematical tools developed in different fields that rely on the same assumptions.
+In some cases, these mathematical tools will themselves be equivalent.
 
-## Usage
+To develop Mathtree, we document instances of mathematical tools and their applications by the assumptions used.
+These instances are leaves, and the assumptions are branches that connect the leaves.
+Has the number of assumptions documented grows, eventually different fields will become linked.
+
+## Clojure
 
 FIXME: explanation
 
@@ -49,23 +61,3 @@ from `build.clj`.
 Run that uberjar:
 
     $ java -jar target/net.clojars.mathtree/mathtree-0.1.0-SNAPSHOT.jar
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 Reepoi

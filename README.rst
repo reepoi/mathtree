@@ -1,6 +1,8 @@
-# mathtree
+Math Tree
+=========
 
-# Vision
+Vision
+------
 
 Mathtree speeds up problem-solving by revealing what mathematical tools that rely on a given set of assumptions.
 People who can describe the assumptions of their problem can quickly find existing and relevant mathematical tools to apply.
@@ -18,7 +20,31 @@ To develop Mathtree, we document instances of mathematical tools and their appli
 These instances are leaves, and the assumptions are branches that connect the leaves.
 Has the number of assumptions documented grows, eventually different fields will become linked.
 
-## Clojure
+Installation
+============
+
+#. Install `Clojure <https://clojure.org/guides/install_clojure>`_.
+#. Install the latest Java that is compatible with the Clojure version installed.
+   For easy installation, try `Adoptium Temurin <https://adoptium.net/>`_.
+#. Install `Go <https://go.dev/doc/install>`_.
+#. Install `Hugo <https://gohugo.io/installation/>`_.
+#. Install the submodules:
+
+   .. code:: bash
+
+      git submodule update --init --recursive
+
+Website development
+===================
+
+Run the Hugo development server:
+
+   .. code:: bash
+
+      hugo server --buildDrafts --navigateToChanged
+
+Clojure
+=======
 
 FIXME: explanation
 

@@ -1,0 +1,27 @@
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+   MathJax = {
+      loader: {load: [
+        '[tex]/color',
+        '[tex]/mathtools',
+      ]},
+      tex: {
+         packages: {'[+]': ['mathtools']},
+         displayMath: [['\\[', '\\]']],
+         inlineMath: [['\\(', '\\)']],
+         macros: {
+            transpose: '\\mathsf{T}',
+
+            vect: ['\\boldsymbol{#1}', 1],
+            mat: ['\\boldsymbol{#1}', 1],
+            lnr: ['\\mathopen{}\\left#1#3\\right#2\\mathclose{}', 3],
+            set: ['\\lnr{\\{}{\\}}{#1}', 1],
+            pn: ['\\lnr{(}{)}{#1}', 1],
+            spn: ['\\lnr{[}{]}{#1}', 1],
+         },
+      },
+      loader:{
+         load: ['ui/safe']
+      },
+   };
+</script>

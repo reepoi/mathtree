@@ -1,4 +1,15 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Mathtree'
+title = 'Math Tree'
 theme = 'paper'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]']]
+          inline = [['\(', '\)']]
+[params]
+  math = true

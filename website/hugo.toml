@@ -6,6 +6,7 @@ theme = 'paper'
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
+      footnote = true
       [markup.goldmark.extensions.passthrough]
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]

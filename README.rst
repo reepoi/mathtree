@@ -20,6 +20,14 @@ To develop Mathtree, we document instances of mathematical tools and their appli
 These instances are leaves, and the assumptions are branches that connect the leaves.
 Has the number of assumptions documented grows, eventually different fields will become linked.
 
+The assumptions of existing mathematical tools are already documented in books and papers.
+Let's make this documentation accessible to and managed by a computer.
+These assumptions must always be considered, so let's get computers to help us keep track of what we are assuming.
+
+Mutually exclusive, collectively exhaustive assumption set.
+Removing the overlap of how different authors state the same assumptions.
+Repeatable, systematic, extensible documentation of the assumptions.
+
 Installation
 ============
 
